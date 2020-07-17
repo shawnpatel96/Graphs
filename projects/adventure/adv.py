@@ -77,7 +77,7 @@ def opposite_direction(direction):
     else: 
         return None
 
-# move through rooms
+
 
 # def fisher_yates_shuffle(l):
 #         for i in range(0, len(l)):
@@ -88,8 +88,6 @@ def explore_paths():
     stack = Stack()
     # keep track of visited nodes 
     visited = set()
-    
-    
     # while visited is less than total amount of rooms 
     while len(visited) < len(world.rooms):
         path= []
