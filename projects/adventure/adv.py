@@ -108,16 +108,12 @@ def explore_paths():
             stack.push(path[random_path_movement])
             player.travel(path[random_path_movement])
             # print(path)
-            traversal_path.append(path[random_path_movement])
             total_moves.append(path[random_path_movement])
         else:
-            # return last from stack
             last = stack.pop()
-            # backtrack
             player.travel(opposite_direction(last))
             total_moves.append(opposite_direction(last))
-            # add to travel_path
-            traversal_path.append(opposite_direction(last))
+
 
 
 
